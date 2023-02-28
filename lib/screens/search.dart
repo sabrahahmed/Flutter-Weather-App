@@ -63,6 +63,7 @@ class _SearchState extends State<Search> {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         extendBodyBehindAppBar: true,
         backgroundColor: Colors.blueAccent,
         appBar: AppBar(

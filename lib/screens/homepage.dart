@@ -64,6 +64,7 @@ class _HomepageState extends State<Homepage> {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         extendBodyBehindAppBar: true,
         backgroundColor: Colors.blueAccent,
         appBar: AppBar(
