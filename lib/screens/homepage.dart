@@ -53,8 +53,6 @@ class _HomepageState extends State<Homepage> {
       min = weatherData['main']['temp_min'];
       max = weatherData['main']['temp_max'];
       pressure = weatherData['main']['pressure'];
-      print(long);
-      print(lat);
     });
   }
 

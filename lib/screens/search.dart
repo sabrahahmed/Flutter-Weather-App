@@ -92,7 +92,7 @@ class _SearchState extends State<Search> {
                 ),
               ),
               IconButton(
-                icon: Icon(Icons.house, color: Colors.white, size: 25),
+                icon: Icon(Icons.house, color: Colors.white, size: 30),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return LoadingScreen();
