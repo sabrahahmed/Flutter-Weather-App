@@ -30,19 +30,6 @@ class Weather {
   }
 
   String getWeatherBackground(int condition) {
-    // if (condition < 300) {
-    //   return 'images/thunder.jpg'; //thunder
-    // } else if (condition < 600) {
-    //   return 'images/rain.jpg'; // rain
-    // } else if (condition < 700) {
-    //   return 'images/snow.jpg'; //snowing
-    // } else if (condition < 800) {
-    //   return 'images/fog.jpg'; //foggy
-    // } else if (condition == 800) {
-    //   return 'images/sunny.jpg'; //sunny
-    // } else if (condition <= 804) {
-    //   return 'images/cloudy.jpg'; //cloudy
-    // } else {
     return 'images/idk.jpg'; //blue background
     // }
   }

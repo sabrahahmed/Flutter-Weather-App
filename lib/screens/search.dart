@@ -70,36 +70,34 @@ class _SearchState extends State<Search> {
           elevation: 0,
           automaticallyImplyLeading: false,
           title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              AnimSearchBar(
-                width: 300,
-                textController: Controller,
-                prefixIcon: Icon(
-                  Icons.search,
-                  color: Colors.black,
+              Expanded(
+                child: AnimSearchBar(
+                  width: 250,
+                  textController: Controller,
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: Colors.black,
+                  ),
+                  suffixIcon: Icon(Icons.search, color: Colors.black),
+                  helpText: 'Search any city!',
+                  onSuffixTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return SearchLoading(
+                        city: Controller.text,
+                      );
+                    }));
+                  },
                 ),
-                suffixIcon: Icon(Icons.search, color: Colors.black),
-                helpText: 'Search any city!',
-                onSuffixTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return SearchLoading(
-                      city: Controller.text,
-                    );
-                  }));
-                },
               ),
-              SizedBox(width: 20),
               IconButton(
-                icon: Icon(Icons.house, color: Colors.white, size: 40),
+                icon: Icon(Icons.house, color: Colors.white, size: 25),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return LoadingScreen();
                   }));
                 },
-              ),
-              SizedBox(
-                width: 1,
               ),
             ],
           ),

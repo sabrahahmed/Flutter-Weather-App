@@ -18,16 +18,16 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   var long;
   var lat;
-  double temperature;
-  double feelsLike;
+  var temperature;
+  var feelsLike;
   var description;
   var humidity;
   var windSpeed;
   var cityName;
   var country;
   var id;
-  double min;
-  double max;
+  var min;
+  var max;
   var pressure;
 
   TextEditingController Controller = new TextEditingController();
@@ -53,8 +53,8 @@ class _HomepageState extends State<Homepage> {
       min = weatherData['main']['temp_min'];
       max = weatherData['main']['temp_max'];
       pressure = weatherData['main']['pressure'];
-      // print(long);
-      // print(lat);
+      print(long);
+      print(lat);
     });
   }
 
@@ -74,7 +74,7 @@ class _HomepageState extends State<Homepage> {
           automaticallyImplyLeading: false,
           title: Row(children: [
             AnimSearchBar(
-              width: 300,
+              width: 250,
               textController: Controller,
               prefixIcon: Icon(
                 Icons.search,

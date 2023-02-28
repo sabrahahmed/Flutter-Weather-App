@@ -3,6 +3,9 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:weather_application/services/weather.dart';
 import 'package:weather_application/screens/search.dart';
 
+import 'homepage.dart';
+import 'loading_screen.dart';
+
 class SearchLoading extends StatefulWidget {
   SearchLoading({this.city});
   String city;
@@ -23,11 +26,23 @@ class _SearchLoadingState extends State<SearchLoading> {
     Weather weather = Weather();
     var searchData = await weather.getSearchWeather(city);
 
-    Navigator.push(context, MaterialPageRoute(builder: (context) {
-      return Search(
-        locationWeather: searchData,
+    if (searchData == null) {
+      // display error message if location data is null
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('City not found!'),
+        ),
       );
-    }));
+      Navigator.push(context, MaterialPageRoute(builder: (context) {
+        return LoadingScreen();
+      }));
+    } else {
+      Navigator.push(context, MaterialPageRoute(builder: (context) {
+        return Search(
+          locationWeather: searchData,
+        );
+      }));
+    }
   }
 
   @override

@@ -11,7 +11,6 @@ class LoadingScreen extends StatefulWidget {
 class _LoadingScreenState extends State<LoadingScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getLocationData();
   }
@@ -20,11 +19,25 @@ class _LoadingScreenState extends State<LoadingScreen> {
     Weather weather = Weather();
     var weatherData = await weather.getLocationWeather();
 
-    Navigator.push(context, MaterialPageRoute(builder: (context) {
-      return Homepage(
-        locationWeather: weatherData,
+    if (weatherData == null) {
+      // display error message if location data is null
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('City not found'),
+        ),
       );
-    }));
+    } else {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return Homepage(
+              locationWeather: weatherData,
+            );
+          },
+        ),
+      );
+    }
   }
 
   @override
