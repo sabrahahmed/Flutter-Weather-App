@@ -30,7 +30,7 @@ class Weather {
   }
 
   String getWeatherBackground(int condition) {
-    return 'images/idk.jpg'; //blue background
+    return 'images/blue_background.jpg'; //blue background
     // }
   }
 
