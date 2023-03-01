@@ -17,6 +17,7 @@ dependencies:
   anim_search_bar: ^2.0.2
   flutter_weather_icons: ^1.0.2
   flutter_weather_bg: ^2.8.2
+  permission_handler: ^8.3.0
 
 
 

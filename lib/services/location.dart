@@ -6,6 +6,10 @@ class Location {
 
   void getCurrentLocation() async {
     try {
+      LocationPermission permission;
+      permission = await Geolocator.requestPermission();
+      print("Permision requested");
+
       Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.low);
       latitude = position.latitude;
