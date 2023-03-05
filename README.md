@@ -6,6 +6,5 @@ Welcome to the Weather App! This user-friendly Flutter mobile application is des
 - Live weather data for current device location
 - Weather data for any city in the world
 - Temperature, humidity, wind speed, and pressure data
-- 7-day weather forecast
 - User-friendly interface
 
