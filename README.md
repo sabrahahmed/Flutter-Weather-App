@@ -23,8 +23,10 @@ You can also demo the application directly on appetize!
 https://appetize.io/app/5vckaq6bn5jywh77vp5n3slmem?device=pixel4&osVersion=12.0&scale=100
 
 <h2> Tools </h2>
-- Flutter (Dart) 
-- OpenWeatherMap API
+<ul>
+    <li>Flutter (Dart) </li>
+    <li>OpenWeatherMap API</li>
+</ul>
 
 
 
