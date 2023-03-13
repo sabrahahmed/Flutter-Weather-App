@@ -16,7 +16,7 @@ To run the application, you will need to install Android Studio 3.5.3 (latest ve
 Most importantly, the app folder contains most of the work used for development. At the top of the screen, you will find a dropdown tab with title Unknown Device. Open that tab and create a virtual device which allows you to run the app on an android emulator (for example, create a Nexus 5 device with Android 10.0 API 29 option).
 
 ### Demo
-You can also demo the application directly from this appetize link: <a href="https://appetize.io/app/5vckaq6bn5jywh77vp5n3slmem?device=pixel4&osVersion=12.0&scale=100"></a>
+You can also demo the application directly from this appetize link: https://appetize.io/app/5vckaq6bn5jywh77vp5n3slmem?device=pixel4&osVersion=12.0&scale=100
 
 
 
