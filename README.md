@@ -24,7 +24,7 @@ https://appetize.io/app/5vckaq6bn5jywh77vp5n3slmem?device=pixel4&osVersion=12.0&
 
 <h2> Tools </h2>
 - Flutter (Dart) 
-- OpenWeatherMap 
+- OpenWeatherMap API
 
 
 
