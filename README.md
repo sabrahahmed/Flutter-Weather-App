@@ -13,7 +13,7 @@ The app was designed to display all the essential information the user needs. Us
 </p>
 
 <h2> Installation and Usage </h2>
-To run the application, you will need to install Android Studio 3.5.3 (latest version at time of development) and pull the project from github to a local repo. Afterwards, open the project from the top left button in android studio. You will find that your left bar with the title project is now populated with a bunch of folders.
+To run the application, you will need to install Android Studio 4.2.3 (latest version at time of development) and pull the project from github to a local repo. Afterwards, open the project from the top left button in android studio. You will find that your left bar with the title project is now populated with a bunch of folders.
 <br/>
 <br/>
 Most importantly, the app folder contains most of the work used for development. At the top of the screen, you will find a dropdown tab with title Unknown Device. Open that tab and create a virtual device which allows you to run the app on an android emulator (for example, create a Nexus 5 device with Android 10.0 API 29 option).
