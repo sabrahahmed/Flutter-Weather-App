@@ -1,17 +1,12 @@
-### Weather App
+<h1> Weather App </h1>
 
-Welcome to the Weather App! This user-friendly mobile application is designed to display live weather data for your current device location as well as any city in the world. With the Weather App, you can get accurate and up-to-date weather information anytime, anywhere.
+Welcome to the Weather App! This app is designed with a user-friendly interface that provides real-time weather data for your current location, as well as over 200,000 cities worldwide that can be easily searched. Built with Flutter (Dart), the app fetches the most accurate and reliable weather information from OpenWeatherMap's public REST API.
+
+The app was designed to display all the essential information the user needs. Users can view the current temperature, weather description, feels-like temperature, minimum and maximum temperature, humidity, windspeed, and pressure of their location or any other city they are interested in. With the Weather App, you can get accurate and up-to-date weather information anytime, anywhere!
 
 ![flutter](https://user-images.githubusercontent.com/108163033/224827269-a8593939-60cc-4821-a0fc-d6fb84c68af9.JPG)
 
 
-
-## Features
-
-- Live weather data for current device location
-- Weather data for any city in the world
-- Temperature, humidity, wind speed, and pressure data
-- User-friendly interface
 
 
 
