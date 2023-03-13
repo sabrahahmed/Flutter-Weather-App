@@ -19,7 +19,8 @@ Most importantly, the app folder contains most of the work used for development.
 You can also demo the application directly from on appetize: https://appetize.io/app/5vckaq6bn5jywh77vp5n3slmem?device=pixel4&osVersion=12.0&scale=100
 
 <h2> Tools </h2>
-Flutter (Dart) - OpenWeatherMap 
+- Flutter (Dart) 
+- OpenWeatherMap 
 
 
 
